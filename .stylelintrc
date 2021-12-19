@@ -1,0 +1,27 @@
+{
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "at-rule-no-unknown": null,
+    "block-opening-brace-space-before": "always",
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "declaration-colon-space-after": "always",
+    "length-zero-no-unit": true,
+    "number-leading-zero": "always",
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["lower-font-range", "upper-font-range"]
+      }
+    ],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "ignore": ["after-comment", "first-nested"]
+      }
+    ],
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-list-comma-newline-after": "always",
+    "string-quotes": "double"
+  }
+}

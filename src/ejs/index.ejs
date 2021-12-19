@@ -1,0 +1,195 @@
+    <!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+      <!-- meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>クリスマスのリース</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta name="format-detection" content="telephone=no">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+
+    <body>
+
+      <main class="main-contents">
+
+        <script src="/js/vendor/html2canvas.js"></script>
+        <script src="/js/index.js" defer></script>
+
+        <div class="content">
+          <p class="lead_text">ドラッグして飾り付けしてね</p>
+
+          <div class="bg-container">
+            <div id="canvas-box" class="badge badge-primary">
+              <div class="template">
+                <p class="text">Merry Christmas</p>
+                <div class="lease">
+                  <%- include(relativePath + '_svg/_lease' )%>
+                </div>
+              </div>
+              <input type="radio" name="bg" id="bg-1" checked>
+              <input type="radio" name="bg" id="bg-2">
+              <input type="radio" name="bg" id="bg-3">
+              <div class="imgbox">
+                <div class="bg-item bg-color1">
+                </div>
+                <div class="bg-item bg-color2">
+                  <div class="snow">
+                    <svg viewBox="0 0 320 420">
+                      <circle cx="79.79" cy="67.98" r="9.22" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="92.41" cy="336.87" r="9.22" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="280.06" cy="303.4" r="5.9" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="194.46" cy="352" r="5.9" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="15.7" cy="89.86" r="5.9" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="259.42" cy="140.5" r="9.22" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="24.92" cy="262.05" r="9.22" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="206.46" cy="89.86" r="13.28" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="106.6" cy="149.73" r="14.76" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="47.43" cy="117.15" r="13.28" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="157.26" cy="192.04" r="13.28" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="83.18" cy="217.93" r="14.76" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="188.56" cy="271.27" r="14.76" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <circle cx="264.94" cy="245.03" r="9.22" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <path d="M101.34,413.18h.72c-.13-.14-.26-.27-.39-.42A2.87,2.87,0,0,0,101.34,413.18Z"
+                        transform="translate(0)" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <path
+                        d="M320.06,364.18a29.73,29.73,0,0,0-27.88-2.56,53.91,53.91,0,0,0-94.59,20,34.41,34.41,0,0,0-48.66.6,35.43,35.43,0,0,0-2.55,2.93,26.72,26.72,0,0,0-50.27,1.66,18.92,18.92,0,0,0-10.61-3.22h-.23A47.91,47.91,0,0,0,.5,357.91v55.27H101.34c.09-.14.19-.27.28-.42.13.15.26.28.39.42H320.06Z"
+                        transform="translate(0)" fill="#fff" stroke="#ededed" stroke-miterlimit="10" />
+                      <rect x="0.5" width="319.56" height="413.18" fill="none" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="bg-item bg-color3">
+                </div>
+              </div>
+
+              <div class="drag-items">
+                <div class="drag-item">
+                  <div class="drag-and-drop item-bell">
+                    <%- include(relativePath + '_svg/_bell' )%>
+                  </div>
+                  <div class="drag-and-drop item-bell">
+                    <%- include(relativePath + '_svg/_bell' )%>
+                  </div>
+                  <div class="drag-and-drop item-bell">
+                    <%- include(relativePath + '_svg/_bell' )%>
+                  </div>
+                  <div class="drag-and-drop item-bell">
+                    <%- include(relativePath + '_svg/_bell' )%>
+                  </div>
+                </div>
+                <div class="drag-item">
+                  <div class="drag-and-drop item-socks">
+                    <%- include(relativePath + '_svg/_socks' )%>
+                  </div>
+                  <div class="drag-and-drop item-socks">
+                    <%- include(relativePath + '_svg/_socks' )%>
+                  </div>
+                  <div class="drag-and-drop item-socks">
+                    <%- include(relativePath + '_svg/_socks' )%>
+                  </div>
+                  <div class="drag-and-drop item-socks">
+                    <%- include(relativePath + '_svg/_socks' )%>
+                  </div>
+                </div>
+                <div class="drag-item">
+                  <div class="drag-and-drop item-cookie">
+                    <%- include(relativePath + '_svg/_cookie' )%>
+                  </div>
+                  <div class="drag-and-drop item-cookie">
+                    <%- include(relativePath + '_svg/_cookie' )%>
+                  </div>
+                  <div class="drag-and-drop item-cookie">
+                    <%- include(relativePath + '_svg/_cookie' )%>
+                  </div>
+                  <div class="drag-and-drop item-cookie">
+                    <%- include(relativePath + '_svg/_cookie' )%>
+                  </div>
+                </div>
+                <div class="drag-item">
+                  <div class="drag-and-drop item-pegasus">
+                    <%- include(relativePath + '_svg/_pegasus' )%>
+                  </div>
+                  <div class="drag-and-drop item-pegasus">
+                    <%- include(relativePath + '_svg/_pegasus' )%>
+                  </div>
+                  <div class="drag-and-drop item-pegasus">
+                    <%- include(relativePath + '_svg/_pegasus' )%>
+                  </div>
+                  <div class="drag-and-drop item-pegasus">
+                    <%- include(relativePath + '_svg/_pegasus' )%>
+                  </div>
+                </div>
+                <div class="drag-item">
+                  <div class="drag-and-drop item-candy">
+                    <%- include(relativePath + '_svg/_candy' )%>
+                  </div>
+                  <div class="drag-and-drop item-candy">
+                    <%- include(relativePath + '_svg/_candy' )%>
+                  </div>
+                  <div class="drag-and-drop item-candy">
+                    <%- include(relativePath + '_svg/_candy' )%>
+                  </div>
+                  <div class="drag-and-drop item-candy">
+                    <%- include(relativePath + '_svg/_candy' )%>
+                  </div>
+                </div>
+                <div class="drag-item">
+                  <div class="drag-and-drop item-present">
+                    <%- include(relativePath + '_svg/_present' )%>
+                  </div>
+                  <div class="drag-and-drop item-present">
+                    <%- include(relativePath + '_svg/_present' )%>
+                  </div>
+                  <div class="drag-and-drop item-present">
+                    <%- include(relativePath + '_svg/_present' )%>
+                  </div>
+                  <div class="drag-and-drop item-present">
+                    <%- include(relativePath + '_svg/_present' )%>
+                  </div>
+                </div>
+                <div class="drag-item">
+                  <div class="drag-and-drop item-ball">
+                    <%- include(relativePath + '_svg/_ball' )%>
+                  </div>
+                  <div class="drag-and-drop item-ball">
+                    <%- include(relativePath + '_svg/_ball' )%>
+                  </div>
+                  <div class="drag-and-drop item-ball">
+                    <%- include(relativePath + '_svg/_ball' )%>
+                  </div>
+                  <div class="drag-and-drop item-ball">
+                    <%- include(relativePath + '_svg/_ball' )%>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="bg-color_list">
+              <p>背景色</p>
+              <ul class="bg-color_btn">
+                <li><label for="bg-2">夜</label></li>
+                <li><label for="bg-1">昼</label></li>
+                <li><label for="bg-3">暖炉</label></li>
+              </ul>
+            </div>
+
+            <div class="downlowd-btn">
+              <input id="download-btn" type="button" value="画像をダウンロードする">
+            </div>
+          </div>
+
+
+        </div>
+      </main>
+
+    </body>
+
+    </html>

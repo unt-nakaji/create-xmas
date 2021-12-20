@@ -68,7 +68,7 @@
     html2canvas(document.querySelector('#canvas-box')).then(function (canvas) {
       var downloadEle = document.createElement('a');
       downloadEle.href = canvas.toDataURL('image/png');
-      downloadEle.download = 'canvas2.png';
+      downloadEle.download = 'createxmas_image.png';
       downloadEle.click();
     });
   }); 
